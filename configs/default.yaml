@@ -1,0 +1,64 @@
+# Default configuration for HSDVC
+
+# Motion Extraction
+motion:
+  pose_model: mediapipe  # mediapipe, vitpose, openpose
+  depth_model: depth_anything_v2  # depth_anything_v2, midas
+  flow_model: raft  # raft, gmflow
+  camera_model: colmap_free
+  detect_contacts: true
+  use_motion_ode: true
+
+# Geometry
+geometry:
+  type: gaussian_splatting  # gaussian_splatting, nerf, dynamic_mesh
+  num_gaussians: 100000
+  sh_degree: 3
+
+# Identity
+identity:
+  encoder_type: dinov2  # dinov2, resnet50, vit_base
+  shape_dim: 512
+  appearance_dim: 512
+  texture_dim: 1024
+  use_triplet_loss: true
+
+# CogVideoX
+cogvideox:
+  model_name: THUDM/CogVideoX-5b
+  num_frames: 49
+  frame_rate: 8
+  image_size: [480, 720]
+  lora_rank: 64
+  lora_alpha: 64
+
+# ControlNet
+controlnet:
+  num_control_layers: 12
+  control_channels: 12
+  control_scale: 1.0
+
+# Training
+training:
+  learning_rate: 1.0e-4
+  batch_size: 4
+  num_epochs: 100
+  mixed_precision: fp16
+  compilation_steps: 500
+
+# Data
+data:
+  video_length: 49
+  frame_rate: 8
+  resolution: [480, 720]
+  num_workers: 8
+
+# Inference
+inference:
+  num_inference_steps: 50
+  guidance_scale: 7.5
+
+# System
+seed: 42
+device: cuda
+output_dir: ./outputs
