@@ -9,8 +9,8 @@ import torch.nn.functional as F
 from typing import Dict, Optional, Tuple
 from dataclasses import dataclass
 
-from ..config import GeometryConfig
-from ..motion import MotionData
+from hsdvc.config import GeometryConfig
+from hsdvc.models.motion import MotionData
 
 
 @dataclass

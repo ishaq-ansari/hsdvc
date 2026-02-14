@@ -8,11 +8,11 @@ from typing import Dict, Optional
 from pathlib import Path
 import json
 
-from ..config import HSDVCConfig, CogVideoXConfig, ControlNetConfig
-from ..motion import MotionExtractor, MotionData
-from ..identity import IdentityEncoder, IdentityEmbedding
-from ..geometry import create_geometry
-from ..cogvideox import load_cogvideox_with_structure, CogVideoXWithStructure
+from hsdvc.config import HSDVCConfig, CogVideoXConfig, ControlNetConfig
+from hsdvc.models.motion import MotionExtractor, MotionData
+from hsdvc.models.identity import IdentityEncoder, IdentityEmbedding
+from hsdvc.models.geometry import create_geometry
+from hsdvc.models.cogvideox import load_cogvideox_with_structure, CogVideoXWithStructure
 
 
 class VideoCompiler(nn.Module):

@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="hsdvc",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Ishaq Ansari",
+    author_email="ishaq.ansari@medicine.ufl.edu",
     description="Hybrid Structured-Diffusion Video Compiler",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/smcdr",
+    url="https://github.com/ishaq-ansari/smcdr",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -45,19 +45,11 @@ setup(
         "peft>=0.7.0",  # For LoRA
         "xformers>=0.0.22",  # For efficient attention
         # Motion and 3D
-        "pytorch3d>=0.7.5",
         "trimesh>=4.0.0",
-        "open3d>=0.18.0",
         # Video processing
-        "av>=11.0.0",
-        "decord>=0.6.0",
         "imageio[ffmpeg]>=2.31.0",
         # Pose estimation
-        "mediapipe>=0.10.0",
-        # Depth estimation  
-        "depth-anything>=1.0.0",  # Will need to add from source
-        # Flow estimation
-        "raft-optical-flow>=1.0.0",  # Will need to add from source
+        "mediapipe>=0.10.0"
     ],
     extras_require={
         "dev": [
@@ -68,6 +60,18 @@ setup(
             "isort>=5.12.0",
             "mypy>=1.5.0",
             "pre-commit>=3.4.0",
+        ],
+        "3d": [
+            "open3d>=0.18.0",
+            # pytorch3d needs manual install: pip install "git+https://github.com/facebookresearch/pytorch3d.git"
+        ],
+        "video": [
+            "av>=11.0.0",
+            "decord>=0.6.0",
+        ],
+        "motion": [
+            # Depth-Anything V2: pip install git+https://github.com/DepthAnything/Depth-Anything-V2.git
+            # RAFT: pip install git+https://github.com/princeton-vl/RAFT.git
         ],
         "gaussian_splatting": [
             "diff-gaussian-rasterization>=0.0.1",

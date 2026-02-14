@@ -7,9 +7,9 @@ import torch.nn as nn
 from typing import Optional, Union
 from pathlib import Path
 
-from .compiler import VideoCompiler
-from ..identity import IdentityEncoder, IdentityEmbedding
-from ..config import HSDVCConfig
+from hsdvc.models.compiler import VideoCompiler
+from hsdvc.models.identity import IdentityEncoder, IdentityEmbedding
+from hsdvc.config import HSDVCConfig
 
 
 class CharacterReplacer:

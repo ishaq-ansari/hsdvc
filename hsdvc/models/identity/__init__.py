@@ -8,7 +8,7 @@ import torch.nn.functional as F
 from typing import Dict, Optional, Tuple
 from dataclasses import dataclass
 
-from ..config import IdentityConfig
+from hsdvc.config import IdentityConfig
 
 
 @dataclass

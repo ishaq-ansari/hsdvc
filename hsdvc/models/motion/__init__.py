@@ -10,7 +10,7 @@ from typing import Dict, List, Tuple, Optional
 from dataclasses import dataclass
 import cv2
 
-from ..config import MotionExtractionConfig
+from hsdvc.config import MotionExtractionConfig
 
 
 @dataclass

@@ -9,7 +9,7 @@ import torch.nn.functional as F
 from typing import Dict, List, Optional, Tuple
 from einops import rearrange
 
-from ..config import ControlNetConfig, CogVideoXConfig
+from hsdvc.config import ControlNetConfig, CogVideoXConfig
 
 
 class ControlNetConditioner(nn.Module):

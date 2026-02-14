@@ -9,9 +9,9 @@ from diffusers import CogVideoXPipeline, CogVideoXTransformer3DModel
 from peft import LoraConfig, get_peft_model, PeftModel
 from einops import rearrange
 
-from ..config import CogVideoXConfig, ControlNetConfig
-from ..controlnet import StructuredControlInjector, TemporalConsistencyRegularizer
-from ..identity import IdentityEmbedding
+from hsdvc.config import CogVideoXConfig, ControlNetConfig
+from hsdvc.models.controlnet import StructuredControlInjector, TemporalConsistencyRegularizer
+from hsdvc.models.identity import IdentityEmbedding
 
 
 class CogVideoXWithStructure(nn.Module):
