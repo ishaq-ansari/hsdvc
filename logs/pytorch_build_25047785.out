@@ -1,0 +1,390 @@
+==========================================
+Building PyTorch with SM_100 Support
+Start Time: Sun Feb 15 08:09:09 PM EST 2026
+==========================================
+CUDA Version: Cuda compilation tools, release 12.8, V12.8.93
+Conda Version: conda 25.7.0
+CUDA_HOME: /apps/compilers/cuda/12.8.1
+
+Creating build environment: pytorch_build_sm100
+Channels:
+ - conda-forge
+ - bioconda
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - \ | / - \ | / - \ | done
+Solving environment: - \ done
+
+## Package Plan ##
+
+  environment location: /blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100
+
+  added / updated specs:
+    - cmake
+    - mkl
+    - mkl-include
+    - ninja
+    - python=3.11
+
+
+The following NEW packages will be INSTALLED:
+
+  _openmp_mutex      conda-forge/linux-64::_openmp_mutex-4.5-7_kmp_llvm 
+  bzip2              conda-forge/linux-64::bzip2-1.0.8-hda65f42_8 
+  c-ares             conda-forge/linux-64::c-ares-1.34.6-hb03c661_0 
+  ca-certificates    conda-forge/noarch::ca-certificates-2026.1.4-hbd8a1cb_0 
+  cmake              conda-forge/linux-64::cmake-4.2.3-hc85cc9f_0 
+  icu                conda-forge/linux-64::icu-78.2-h33c6efd_0 
+  keyutils           conda-forge/linux-64::keyutils-1.6.3-hb9d3cd8_0 
+  krb5               conda-forge/linux-64::krb5-1.22.2-ha1258a1_0 
+  ld_impl_linux-64   conda-forge/linux-64::ld_impl_linux-64-2.45.1-default_hbd61a6d_101 
+  libcurl            conda-forge/linux-64::libcurl-8.18.0-hcf29cc6_1 
+  libedit            conda-forge/linux-64::libedit-3.1.20250104-pl5321h7949ede_0 
+  libev              conda-forge/linux-64::libev-4.33-hd590300_2 
+  libexpat           conda-forge/linux-64::libexpat-2.7.3-hecca717_0 
+  libffi             conda-forge/linux-64::libffi-3.5.2-h3435931_0 
+  libgcc             conda-forge/linux-64::libgcc-15.2.0-he0feb66_17 
+  libgcc-ng          conda-forge/linux-64::libgcc-ng-15.2.0-h69a702a_17 
+  libhwloc           conda-forge/linux-64::libhwloc-2.12.2-default_hafda6a7_1000 
+  libiconv           conda-forge/linux-64::libiconv-1.18-h3b78370_2 
+  liblzma            conda-forge/linux-64::liblzma-5.8.2-hb03c661_0 
+  libnghttp2         conda-forge/linux-64::libnghttp2-1.67.0-had1ee68_0 
+  libnsl             conda-forge/linux-64::libnsl-2.0.1-hb9d3cd8_1 
+  libsqlite          conda-forge/linux-64::libsqlite-3.51.2-hf4e2dac_0 
+  libssh2            conda-forge/linux-64::libssh2-1.11.1-hcf80075_0 
+  libstdcxx          conda-forge/linux-64::libstdcxx-15.2.0-h934c35e_17 
+  libuuid            conda-forge/linux-64::libuuid-2.41.3-h5347b49_0 
+  libuv              conda-forge/linux-64::libuv-1.51.0-hb03c661_1 
+  libxcrypt          conda-forge/linux-64::libxcrypt-4.4.36-hd590300_1 
+  libxml2            conda-forge/linux-64::libxml2-2.15.1-he237659_1 
+  libxml2-16         conda-forge/linux-64::libxml2-16-2.15.1-hca6bf5a_1 
+  libzlib            conda-forge/linux-64::libzlib-1.3.1-hb9d3cd8_2 
+  llvm-openmp        conda-forge/linux-64::llvm-openmp-21.1.8-h4922eb0_0 
+  mkl                conda-forge/linux-64::mkl-2025.3.0-h0e700b2_463 
+  mkl-include        conda-forge/linux-64::mkl-include-2025.3.0-hf2ce2f3_463 
+  ncurses            conda-forge/linux-64::ncurses-6.5-h2d0b736_3 
+  ninja              conda-forge/linux-64::ninja-1.13.2-h171cf75_0 
+  openssl            conda-forge/linux-64::openssl-3.6.1-h35e630c_1 
+  packaging          conda-forge/noarch::packaging-26.0-pyhcf101f3_0 
+  pip                conda-forge/noarch::pip-26.0.1-pyh8b19718_0 
+  python             conda-forge/linux-64::python-3.11.14-hd63d673_3_cpython 
+  readline           conda-forge/linux-64::readline-8.3-h853b02a_0 
+  rhash              conda-forge/linux-64::rhash-1.4.6-hb9d3cd8_1 
+  setuptools         conda-forge/noarch::setuptools-82.0.0-pyh332efcf_0 
+  tbb                conda-forge/linux-64::tbb-2022.3.0-hb700be7_2 
+  tk                 conda-forge/linux-64::tk-8.6.13-noxft_h366c992_103 
+  tzdata             conda-forge/noarch::tzdata-2025c-hc9c84f9_1 
+  wheel              conda-forge/noarch::wheel-0.46.3-pyhd8ed1ab_0 
+  zstd               conda-forge/linux-64::zstd-1.5.7-hb78ec9c_6 
+
+
+
+Downloading and Extracting Packages: ...working... done
+Preparing transaction: / - \ | / done
+Verifying transaction: \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | done
+Executing transaction: - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ done
+#
+# To activate this environment, use
+#
+#     $ conda activate pytorch_build_sm100
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+Installing build dependencies...
+Channels:
+ - conda-forge
+ - bioconda
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - \ | / done
+Solving environment: \ | done
+
+## Package Plan ##
+
+  environment location: /blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100
+
+  added / updated specs:
+    - cffi
+    - dataclasses
+    - future
+    - numpy
+    - pyyaml
+    - requests
+    - setuptools
+    - six
+    - typing_extensions
+
+
+The following NEW packages will be INSTALLED:
+
+  backports.zstd     conda-forge/linux-64::backports.zstd-1.3.0-py311h6b1f9c4_0 
+  brotli-python      conda-forge/linux-64::brotli-python-1.2.0-py311h66f275b_1 
+  certifi            conda-forge/noarch::certifi-2026.1.4-pyhd8ed1ab_0 
+  cffi               conda-forge/linux-64::cffi-2.0.0-py311h03d9500_1 
+  charset-normalizer conda-forge/noarch::charset-normalizer-3.4.4-pyhd8ed1ab_0 
+  dataclasses        conda-forge/noarch::dataclasses-0.8-pyhc8e2a94_3 
+  future             conda-forge/noarch::future-1.0.0-pyhd8ed1ab_2 
+  h2                 conda-forge/noarch::h2-4.3.0-pyhcf101f3_0 
+  hpack              conda-forge/noarch::hpack-4.1.0-pyhd8ed1ab_0 
+  hyperframe         conda-forge/noarch::hyperframe-6.1.0-pyhd8ed1ab_0 
+  idna               conda-forge/noarch::idna-3.11-pyhd8ed1ab_0 
+  libblas            conda-forge/linux-64::libblas-3.11.0-5_h4a7cf45_openblas 
+  libcblas           conda-forge/linux-64::libcblas-3.11.0-5_h0358290_openblas 
+  libgfortran        conda-forge/linux-64::libgfortran-15.2.0-h69a702a_17 
+  libgfortran5       conda-forge/linux-64::libgfortran5-15.2.0-h68bc16d_17 
+  liblapack          conda-forge/linux-64::liblapack-3.11.0-5_h47877c9_openblas 
+  libopenblas        conda-forge/linux-64::libopenblas-0.3.30-pthreads_h94d23a6_4 
+  numpy              conda-forge/linux-64::numpy-2.4.2-py311h2e04523_1 
+  pycparser          conda-forge/noarch::pycparser-2.22-pyh29332c3_1 
+  pysocks            conda-forge/noarch::pysocks-1.7.1-pyha55dd90_7 
+  python_abi         conda-forge/noarch::python_abi-3.11-8_cp311 
+  pyyaml             conda-forge/linux-64::pyyaml-6.0.3-py311h3778330_1 
+  requests           conda-forge/noarch::requests-2.32.5-pyhcf101f3_1 
+  six                conda-forge/noarch::six-1.17.0-pyhe01879c_1 
+  typing_extensions  conda-forge/noarch::typing_extensions-4.15.0-pyhcf101f3_0 
+  urllib3            conda-forge/noarch::urllib3-2.6.3-pyhd8ed1ab_0 
+  yaml               conda-forge/linux-64::yaml-0.2.5-h280c20c_3 
+
+
+
+Downloading and Extracting Packages: ...working... done
+Preparing transaction: - \ | done
+Verifying transaction: - \ | / - \ | done
+Executing transaction: - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ done
+
+==========================================
+Step 1: Building PyTorch
+==========================================
+Cloning PyTorch repository...
+Submodule path 'android/libs/fbjni': checked out '7e1e1fe3858c63c251c637ae41a20de425dde96f'
+Submodule path 'third_party/FP16': checked out '4dfe081cf6bcd15db339cf2680b9281b8451eeb3'
+Submodule path 'third_party/FXdiv': checked out 'b408327ac2a15ec3e43352421954f5b1967701d1'
+Submodule path 'third_party/NNPACK': checked out 'c07e3a0400713d546e0dea2d5466dd22ea389c73'
+Submodule path 'third_party/NVTX': checked out 'e170594ac7cf1dac584da473d4ca9301087090c1'
+Submodule path 'third_party/VulkanMemoryAllocator': checked out 'a6bfc237255a6bac1513f7c1ebde6d8aed6b5191'
+Submodule path 'third_party/XNNPACK': checked out 'fcbf55af6cf28a4627bcd1f703ab7ad843f0f3a2'
+Submodule path 'third_party/benchmark': checked out '0d98dba29d66e93259db7daa53a9327df767a415'
+Submodule path 'third_party/cpp-httplib': checked out '3b6597bba913d51161383657829b7e644e59c006'
+Submodule path 'third_party/cpuinfo': checked out '094fc30b9256f54dad5ad23bcbfb5de74781422f'
+Submodule path 'third_party/cudnn_frontend': checked out '2533f5e5c1877fd76266133c1479ef1643ce3a8b'
+Submodule path 'third_party/cutlass': checked out 'bbe579a9e3beb6ea6626d9227ec32d0dae119a49'
+Submodule path 'third_party/eigen': checked out '3147391d946bb4b6c68edd901f2add6ac1f31f8c'
+Submodule path 'third_party/fbgemm': checked out 'dbc3157bf256f1339b3fa1fef2be89ac4078be0e'
+Submodule path 'third_party/fbgemm/third_party/asmjit': checked out 'd3fbf7c9bc7c1d1365a94a45614b91c5a3706b81'
+Submodule path 'third_party/fbgemm/third_party/cpuinfo': checked out 'ed8b86a253800bafdb7b25c5c399f91bff9cb1f3'
+Submodule path 'third_party/fbgemm/third_party/cutlass': checked out 'fc9ebc645b63f3a6bc80aaefde5c063fb72110d6'
+Submodule path 'third_party/fbgemm/third_party/googletest': checked out 'cbf019de22c8dd37b2108da35b2748fd702d1796'
+Submodule path 'third_party/fbgemm/third_party/hipify_torch': checked out '23f53b025b466d8ec3c45d52290d3442f7fbe6b1'
+Submodule path 'third_party/flatbuffers': checked out '01834de25e4bf3975a9a00e816292b1ad0fe184b'
+Submodule path 'third_party/fmt': checked out '0c9fce2ffefecfdce794e1859584e25877b7b592'
+Submodule path 'third_party/gemmlowp/gemmlowp': checked out '3fb5c176c17c765a3492cd2f0321b0dab712f350'
+Submodule path 'third_party/gloo': checked out '5354032ea08eadd7fc4456477f7f7c6308818509'
+Submodule path 'third_party/googletest': checked out 'e2239ee6043f73722e7aa812a459f54a28552929'
+Submodule path 'third_party/ideep': checked out '41d636c2bbcea6bff0faf97cdb65a48cdde987af'
+Submodule path 'third_party/ideep/mkl-dnn': checked out '66f0cb9eb66affd2da3bf5f8d897376f04aae6af'
+Submodule path 'third_party/ittapi': checked out '5b8a7d7422611c3a0d799fb5fc5dd4abfae35b42'
+Submodule path 'third_party/kineto': checked out 'd9753139d181b9ff42872465aac0e5d3018be415'
+Submodule path 'third_party/kineto/libkineto/third_party/dynolog': checked out '7d04a0053a845370ae06ce317a22a48e9edcc74e'
+Submodule path 'third_party/kineto/libkineto/third_party/dynolog/third_party/DCGM': checked out 'ffde4e54bc7249a6039a5e6b45b395141e1217f9'
+Submodule path 'third_party/kineto/libkineto/third_party/dynolog/third_party/cpr': checked out '871ed52d350214a034f6ef8a3b8f51c5ce1bd400'
+Submodule path 'third_party/kineto/libkineto/third_party/dynolog/third_party/fmt': checked out 'cd4af11efc9c622896a3e4cb599fa28668ca3d05'
+Submodule path 'third_party/kineto/libkineto/third_party/dynolog/third_party/gflags': checked out 'e171aa2d15ed9eb17054558e0b3a6a413bb01067'
+Submodule path 'third_party/kineto/libkineto/third_party/dynolog/third_party/gflags/doc': checked out '8411df715cf522606e3b1aca386ddfc0b63d34b4'
+Submodule path 'third_party/kineto/libkineto/third_party/dynolog/third_party/glog': checked out 'b33e3bad4c46c8a6345525fd822af355e5ef9446'
+Submodule path 'third_party/kineto/libkineto/third_party/dynolog/third_party/googletest': checked out '58d77fa8070e8cec2dc1ed015d66b454c8d78850'
+Submodule path 'third_party/kineto/libkineto/third_party/dynolog/third_party/json': checked out '4f8fba14066156b73f1189a2b8bd568bde5284c5'
+Submodule path 'third_party/kineto/libkineto/third_party/dynolog/third_party/pfs': checked out 'f68a2fa8ea36c783bdd760371411fcb495aa3150'
+Submodule path 'third_party/kineto/libkineto/third_party/fmt': checked out '0041a40c1350ba702d475b9c4ad62da77caea164'
+Submodule path 'third_party/kineto/libkineto/third_party/googletest': checked out '7aca84427f224eeed3144123d5230d5871e93347'
+Submodule path 'third_party/mimalloc': checked out 'b66e3214d8a104669c2ec05ae91ebc26a8f5ab78'
+Submodule path 'third_party/nccl/nccl': checked out 'ab2b89c4c339bd7f816fbc114a4b05d386b66290'
+Submodule path 'third_party/nlohmann': checked out '87cda1d6646592ac5866dc703c8e1839046a6806'
+Submodule path 'third_party/onnx': checked out '3bf92c03a9f27eba3bda1e5b9e63ea20ec213557'
+Submodule path 'third_party/onnx/third_party/benchmark': checked out '2dd015dfef425c866d9a43f2c67d8b52d709acb6'
+Submodule path 'third_party/onnx/third_party/pybind11': checked out '5b0a6fc2017fcc176545afe3e09c9f9885283242'
+Submodule path 'third_party/opentelemetry-cpp': checked out 'a799f4aed9c94b765dcdaabaeab7d5e7e2310878'
+Submodule path 'third_party/opentelemetry-cpp/third_party/benchmark': checked out 'd572f4777349d43653b21d6c2fc63020ab326db2'
+Submodule path 'third_party/opentelemetry-cpp/third_party/googletest': checked out 'b796f7d44681514f58a683a3a71ff17c94edb0c1'
+Submodule path 'third_party/opentelemetry-cpp/third_party/ms-gsl': checked out '6f4529395c5b7c2d661812257cd6780c67e54afa'
+Submodule path 'third_party/opentelemetry-cpp/third_party/nlohmann-json': checked out 'bc889afb4c5bf1c0d8ee29ef35eaaf4c8bef8a5d'
+Submodule path 'third_party/opentelemetry-cpp/third_party/opentelemetry-proto': checked out '4ca4f0335c63cda7ab31ea7ed70d6553aee14dce'
+Submodule path 'third_party/opentelemetry-cpp/third_party/opentracing-cpp': checked out '06b57f48ded1fa3bdd3d4346f6ef29e40e08eaf5'
+Submodule path 'third_party/opentelemetry-cpp/third_party/prometheus-cpp': checked out 'c9ffcdda9086ffd9e1283ea7a0276d831f3c8a8d'
+Submodule path 'third_party/opentelemetry-cpp/third_party/prometheus-cpp/3rdparty/civetweb': checked out 'eefb26f82b233268fc98577d265352720d477ba4'
+Submodule path 'third_party/opentelemetry-cpp/third_party/prometheus-cpp/3rdparty/googletest': checked out 'e2239ee6043f73722e7aa812a459f54a28552929'
+Submodule path 'third_party/opentelemetry-cpp/tools/vcpkg': checked out '8eb57355a4ffb410a2e94c07b4dca2dffbee8e50'
+Submodule path 'third_party/pocketfft': checked out '9d3ab05a7fffbc71a492bc6a17be034e83e8f0fe'
+Submodule path 'third_party/protobuf': checked out 'd1eca4e4b421cd2997495c4b4e65cea6be4e9b8a'
+Submodule path 'third_party/protobuf/third_party/benchmark': checked out '5b7683f49e1e9223cf9927b24f6fd3d6bd82e3f8'
+Submodule path 'third_party/protobuf/third_party/googletest': checked out '5ec7f0c4a113e2f18ac2c6cc7df51ad6afc24081'
+Submodule path 'third_party/psimd': checked out '072586a71b55b7f8c584153d223e95687148a900'
+Submodule path 'third_party/pthreadpool': checked out '4fe0e1e183925bf8cfa6aae24237e724a96479b8'
+Submodule path 'third_party/pybind11': checked out '7c33cdc2d39c7b99a122579f53bc94c8eb3332ff'
+Submodule path 'third_party/python-peachpy': checked out 'f45429b087dd7d5bc78bb40dc7cf06425c252d67'
+Submodule path 'third_party/sleef': checked out '60e76d2bce17d278b439d9da17177c8f957a9e9b'
+Submodule path 'third_party/tensorpipe': checked out '52791a2fd214b2a9dc5759d36725909c1daa7f2e'
+Submodule path 'third_party/tensorpipe/third_party/googletest': checked out 'aee0f9d9b5b87796ee8a0ab26b7587ec30e8858e'
+Submodule path 'third_party/tensorpipe/third_party/libnop': checked out '910b55815be16109f04f4180e9adee14fb4ce281'
+Submodule path 'third_party/tensorpipe/third_party/libuv': checked out '1dff88e5161cba5c59276d2070d2e304e4dcb242'
+Submodule path 'third_party/tensorpipe/third_party/pybind11': checked out 'a23996fce38ff6ccfbcdc09f1e63f2c4be5ea2ef'
+Submodule path 'third_party/tensorpipe/third_party/pybind11/tools/clang': checked out '6a00cbc4a9b8e68b71caf7f774b3f9c753ae84d5'
+Updating submodules...
+Synchronizing submodule url for 'android/libs/fbjni'
+Synchronizing submodule url for 'third_party/FP16'
+Synchronizing submodule url for 'third_party/FXdiv'
+Synchronizing submodule url for 'third_party/NNPACK'
+Synchronizing submodule url for 'third_party/NVTX'
+Synchronizing submodule url for 'third_party/VulkanMemoryAllocator'
+Synchronizing submodule url for 'third_party/XNNPACK'
+Synchronizing submodule url for 'third_party/benchmark'
+Synchronizing submodule url for 'third_party/cpp-httplib'
+Synchronizing submodule url for 'third_party/cpuinfo'
+Synchronizing submodule url for 'third_party/cudnn_frontend'
+Synchronizing submodule url for 'third_party/cutlass'
+Synchronizing submodule url for 'third_party/eigen'
+Synchronizing submodule url for 'third_party/fbgemm'
+Synchronizing submodule url for 'third_party/flatbuffers'
+Synchronizing submodule url for 'third_party/fmt'
+Synchronizing submodule url for 'third_party/gemmlowp/gemmlowp'
+Synchronizing submodule url for 'third_party/gloo'
+Synchronizing submodule url for 'third_party/googletest'
+Synchronizing submodule url for 'third_party/ideep'
+Synchronizing submodule url for 'third_party/ittapi'
+Synchronizing submodule url for 'third_party/kineto'
+Synchronizing submodule url for 'third_party/mimalloc'
+Synchronizing submodule url for 'third_party/nccl/nccl'
+Synchronizing submodule url for 'third_party/nlohmann'
+Synchronizing submodule url for 'third_party/onnx'
+Synchronizing submodule url for 'third_party/opentelemetry-cpp'
+Synchronizing submodule url for 'third_party/pocketfft'
+Synchronizing submodule url for 'third_party/protobuf'
+Synchronizing submodule url for 'third_party/psimd'
+Synchronizing submodule url for 'third_party/pthreadpool'
+Synchronizing submodule url for 'third_party/pybind11'
+Synchronizing submodule url for 'third_party/python-peachpy'
+Synchronizing submodule url for 'third_party/sleef'
+Synchronizing submodule url for 'third_party/tensorpipe'
+Patching protobuf CMake version requirement...
+✓ Protobuf CMake patched
+Build configuration:
+  TORCH_CUDA_ARCH_LIST: 10.0
+  CUDA_HOME: /apps/compilers/cuda/12.8.1
+  CMAKE_PREFIX_PATH: /blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100
+
+Cleaning previous build artifacts...
+Building wheel torch-2.5.0a0+gita8d6afb
+running clean
+
+Building PyTorch (this will take 1-2 hours)...
+-- The CXX compiler identification is GNU 11.5.0
+-- The C compiler identification is GNU 11.5.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- /usr/bin/c++ /home/iansari/pytorch_sm100_build/pytorch/torch/abi-check.cpp -o /home/iansari/pytorch_sm100_build/pytorch/build/abi-check
+-- Determined _GLIBCXX_USE_CXX11_ABI=1
+-- Not forcing any particular BLAS to be found
+-- Could not find ccache. Consider installing ccache to speed up compilation.
+-- Performing Test C_HAS_AVX_1
+-- Performing Test C_HAS_AVX_1 - Failed
+-- Performing Test C_HAS_AVX_2
+-- Performing Test C_HAS_AVX_2 - Success
+-- Performing Test C_HAS_AVX2_1
+-- Performing Test C_HAS_AVX2_1 - Failed
+-- Performing Test C_HAS_AVX2_2
+-- Performing Test C_HAS_AVX2_2 - Success
+-- Performing Test C_HAS_AVX512_1
+-- Performing Test C_HAS_AVX512_1 - Failed
+-- Performing Test C_HAS_AVX512_2
+-- Performing Test C_HAS_AVX512_2 - Success
+-- Performing Test CXX_HAS_AVX_1
+-- Performing Test CXX_HAS_AVX_1 - Failed
+-- Performing Test CXX_HAS_AVX_2
+-- Performing Test CXX_HAS_AVX_2 - Success
+-- Performing Test CXX_HAS_AVX2_1
+-- Performing Test CXX_HAS_AVX2_1 - Failed
+-- Performing Test CXX_HAS_AVX2_2
+-- Performing Test CXX_HAS_AVX2_2 - Success
+-- Performing Test CXX_HAS_AVX512_1
+-- Performing Test CXX_HAS_AVX512_1 - Failed
+-- Performing Test CXX_HAS_AVX512_2
+-- Performing Test CXX_HAS_AVX512_2 - Success
+-- Current compiler supports avx2 extension. Will build perfkernels.
+-- Performing Test CAFFE2_COMPILER_SUPPORTS_AVX512_EXTENSIONS
+-- Performing Test CAFFE2_COMPILER_SUPPORTS_AVX512_EXTENSIONS - Success
+-- Current compiler supports avx512f extension. Will build fbgemm.
+-- Performing Test COMPILER_SUPPORTS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_SUPPORTS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_SUPPORTS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_SUPPORTS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_SUPPORTS_RDYNAMIC
+-- Performing Test COMPILER_SUPPORTS_RDYNAMIC - Success
+-- Found CUDA: /apps/compilers/cuda/12.8.1 (found version "12.8") 
+-- The CUDA compiler identification is NVIDIA 12.8.93 with host compiler GNU 11.5.0
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /apps/compilers/cuda/12.8.1/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Found CUDAToolkit: /apps/compilers/cuda/12.8.1/include (found version "12.8.93")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Caffe2: CUDA detected: 12.8
+-- Caffe2: CUDA nvcc is: /apps/compilers/cuda/12.8.1/bin/nvcc
+-- Caffe2: CUDA toolkit directory: /apps/compilers/cuda/12.8.1
+-- Caffe2: Header version is: 12.8
+-- Found Python: /blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/bin/python (found version "3.11.14") found components: Interpreter
+-- Found nvtx3: /home/iansari/pytorch_sm100_build/pytorch/third_party/NVTX/c/include
+-- Could NOT find CUDNN (missing: CUDNN_LIBRARY_PATH CUDNN_INCLUDE_PATH) 
+-- Could NOT find CUSPARSELT (missing: CUSPARSELT_LIBRARY_PATH CUSPARSELT_INCLUDE_PATH) 
+-- Could NOT find CUDSS (missing: CUDSS_LIBRARY_PATH CUDSS_INCLUDE_PATH) 
+-- USE_CUFILE is set to 0. Compiling without cuFile support
+-- Added CUDA NVCC flags for: 
+-- Building using own protobuf under third_party per request.
+-- Use custom protobuf build.
+-- 
+-- 3.13.0.0
+-- Performing Test protobuf_HAVE_BUILTIN_ATOMICS
+-- Performing Test protobuf_HAVE_BUILTIN_ATOMICS - Success
+-- Caffe2 protobuf include directory: $<BUILD_INTERFACE:/home/iansari/pytorch_sm100_build/pytorch/third_party/protobuf/src>$<INSTALL_INTERFACE:include>
+-- Trying to find preferred BLAS backend of choice: MKL
+-- MKL_THREADING = OMP
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of void*
+-- Check size of void* - done
+-- MKL_THREADING = OMP
+-- Check OMP with lib /blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/lib/libomp.so and flags -fopenmp -v
+-- Check OMP with lib /blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/lib/libomp.so and flags -fopenmp -v
+-- Looking for cblas_sgemm
+-- Looking for cblas_sgemm - found
+-- Looking for cblas_gemm_bf16bf16f32
+-- Looking for cblas_gemm_bf16bf16f32 - found
+-- Looking for cblas_gemm_f16f16f32
+-- Looking for cblas_gemm_f16f16f32 - found
+-- Check OMP with lib /blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/lib/libomp.so and flags -fopenmp -v
+-- MKL libraries: /blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/lib/libmkl_intel_lp64.so;/blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/lib/libmkl_gnu_thread.so;/blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/lib/libmkl_core.so;-fopenmp;/usr/lib64/libpthread.a;/usr/lib64/libm.so;/usr/lib64/libdl.a
+-- MKL include directory: /blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/include
+-- MKL OpenMP type: GNU
+-- MKL OpenMP library: -fopenmp
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Configuring incomplete, errors occurred!
+Building wheel torch-2.5.0a0+gita8d6afb
+-- Building version 2.5.0a0+gita8d6afb
+cmake -GNinja -DBUILD_CAFFE2=0 -DBUILD_PYTHON=True -DBUILD_TEST=False -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/iansari/pytorch_sm100_build/pytorch/torch -DCMAKE_PREFIX_PATH=/blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/lib/python3.11/site-packages;/blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100 -DPython_EXECUTABLE=/blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/bin/python -DTORCH_BUILD_VERSION=2.5.0a0+gita8d6afb -DTORCH_CUDA_ARCH_LIST=10.0 -DUSE_CUDA=1 -DUSE_CUDNN=1 -DUSE_DISTRIBUTED=1 -DUSE_MKLDNN=1 -DUSE_NCCL=1 -DUSE_NUMPY=True -DUSE_SYSTEM_NCCL=1 /home/iansari/pytorch_sm100_build/pytorch

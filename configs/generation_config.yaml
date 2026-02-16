@@ -1,0 +1,89 @@
+# Motion Control Video Generation - Configuration File
+# Override default parameters for video generation
+
+# Model Configuration
+model:
+  path: "models/checkpoints" # Path to Wan2.1 model checkpoints
+  device: "cuda" # Device for inference (cuda or cpu)
+  dtype: "float16" # Data type (float16 or float32)
+  enable_xformers: true # Enable xFormers memory efficient attention
+
+# Generation Parameters
+generation:
+  duration: 5.0 # Default video duration (seconds)
+  fps: 24 # Frames per second
+  guidance_scale: 7.5 # Guidance scale for diffusion
+  num_inference_steps: 50 # Number of denoising steps
+  seed: null # Random seed (null for random)
+
+  # Long video generation (for duration > 5s)
+  segment_duration: 5.0 # Duration of each segment
+  blend_frames: 5 # Number of frames to blend between segments
+
+# Postprocessing
+postprocessing:
+  target_resolution:
+    width: 1920
+    height: 1080
+  upscale_method: "lanczos" # realesrgan, bicubic, or lanczos
+  temporal_smoothing:
+    enabled: true
+    kernel_size: 3
+    sigma: 1.0
+  color_enhancement:
+    enabled: false
+    saturation: 1.1
+    brightness: 1.0
+    contrast: 1.0
+
+# Identity Preservation
+identity_preservation:
+  enabled: true
+  method: "codeformer" # codeformer, gfpgan, or both
+  upscale_factor: 2.0
+  face_enhance_strength: 0.5 # 0-1, strength of face restoration
+
+# Audio Processing
+audio:
+  preserve: true
+  codec: "aac"
+  bitrate: "192k"
+  trim_to_video_length: true
+
+# SLURM Configuration (for HPC batch processing)
+slurm:
+  partition: "gpu"
+  gres: "gpu:b200:1"
+  cpus_per_task: 8
+  mem: "64GB"
+  time_limit: "02:00:00"
+  account: null # SLURM account (if required)
+  qos: null # QOS (if required)
+
+# Paths
+paths:
+  data_dir: "data"
+  inputs_dir: "data/inputs"
+  outputs_dir: "data/outputs"
+  logs_dir: "logs"
+  models_dir: "models"
+
+# Performance
+performance:
+  gradient_checkpointing: false # Enable to reduce VRAM usage
+  mixed_precision: true # Use FP16/BF16 mixed precision
+  compile_mode: false # Use torch.compile (PyTorch 2.0+)
+
+# Validation
+validation:
+  min_image_size: [256, 256] # Minimum image dimensions [width, height]
+  max_image_size: [4096, 4096] # Maximum image dimensions
+  min_video_fps: 10.0 # Minimum video FPS
+  max_video_duration: 60.0 # Maximum video duration (seconds)
+
+# Logging
+logging:
+  level: "INFO" # DEBUG, INFO, WARNING, ERROR
+  save_intermediate: false # Save intermediate frames
+  tensorboard: false # Enable TensorBoard logging
+  wandb: false # Enable Weights & Biases logging

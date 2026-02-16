@@ -1,0 +1,381 @@
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 25.7.0
+    latest version: 26.1.0
+
+Please update conda by running
+
+    $ conda update -n base -c conda-forge conda
+
+
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 25.7.0
+    latest version: 26.1.0
+
+Please update conda by running
+
+    $ conda update -n base -c conda-forge conda
+
+
+Cloning into 'pytorch'...
+Note: switching to 'a8d6afb511a69687bbb2b7e88a3cf67917e1697e'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Updating files:   1% (318/16023)Updating files:   2% (321/16023)Updating files:   3% (481/16023)Updating files:   3% (582/16023)Updating files:   4% (641/16023)Updating files:   5% (802/16023)Updating files:   5% (909/16023)Updating files:   6% (962/16023)Updating files:   7% (1122/16023)Updating files:   7% (1225/16023)Updating files:   8% (1282/16023)Updating files:   9% (1443/16023)Updating files:   9% (1566/16023)Updating files:  10% (1603/16023)Updating files:  11% (1763/16023)Updating files:  11% (1876/16023)Updating files:  12% (1923/16023)Updating files:  13% (2083/16023)Updating files:  13% (2198/16023)Updating files:  14% (2244/16023)Updating files:  15% (2404/16023)Updating files:  15% (2521/16023)Updating files:  16% (2564/16023)Updating files:  17% (2724/16023)Updating files:  17% (2843/16023)Updating files:  18% (2885/16023)Updating files:  19% (3045/16023)Updating files:  19% (3167/16023)Updating files:  20% (3205/16023)Updating files:  21% (3365/16023)Updating files:  21% (3462/16023)Updating files:  22% (3526/16023)Updating files:  23% (3686/16023)Updating files:  23% (3778/16023)Updating files:  24% (3846/16023)Updating files:  25% (4006/16023)Updating files:  25% (4090/16023)Updating files:  26% (4166/16023)Updating files:  27% (4327/16023)Updating files:  27% (4384/16023)Updating files:  28% (4487/16023)Updating files:  28% (4554/16023)Updating files:  29% (4647/16023)Updating files:  30% (4807/16023)Updating files:  30% (4843/16023)Updating files:  31% (4968/16023)Updating files:  32% (5128/16023)Updating files:  32% (5148/16023)Updating files:  33% (5288/16023)Updating files:  34% (5448/16023)Updating files:  34% (5497/16023)Updating files:  35% (5609/16023)Updating files:  36% (5769/16023)Updating files:  36% (5873/16023)Updating files:  37% (5929/16023)Updating files:  38% (6089/16023)Updating files:  39% (6249/16023)Updating files:  39% (6253/16023)Updating files:  40% (6410/16023)Updating files:  41% (6570/16023)Updating files:  41% (6645/16023)Updating files:  42% (6730/16023)Updating files:  43% (6890/16023)Updating files:  43% (7021/16023)Updating files:  44% (7051/16023)Updating files:  45% (7211/16023)Updating files:  46% (7371/16023)Updating files:  46% (7423/16023)Updating files:  47% (7531/16023)Updating files:  48% (7692/16023)Updating files:  48% (7801/16023)Updating files:  49% (7852/16023)Updating files:  50% (8012/16023)Updating files:  51% (8172/16023)Updating files:  51% (8185/16023)Updating files:  52% (8332/16023)Updating files:  53% (8493/16023)Updating files:  53% (8584/16023)Updating files:  54% (8653/16023)Updating files:  55% (8813/16023)Updating files:  55% (8966/16023)Updating files:  56% (8973/16023)Updating files:  57% (9134/16023)Updating files:  58% (9294/16023)Updating files:  58% (9379/16023)Updating files:  59% (9454/16023)Updating files:  60% (9614/16023)Updating files:  60% (9735/16023)Updating files:  61% (9775/16023)Updating files:  62% (9935/16023)Updating files:  63% (10095/16023)Updating files:  63% (10101/16023)Updating files:  64% (10255/16023)Updating files:  65% (10415/16023)Updating files:  65% (10494/16023)Updating files:  66% (10576/16023)Updating files:  67% (10736/16023)Updating files:  67% (10858/16023)Updating files:  68% (10896/16023)Updating files:  69% (11056/16023)Updating files:  69% (11151/16023)Updating files:  70% (11217/16023)Updating files:  71% (11377/16023)Updating files:  71% (11467/16023)Updating files:  72% (11537/16023)Updating files:  73% (11697/16023)Updating files:  73% (11783/16023)Updating files:  74% (11858/16023)Updating files:  75% (12018/16023)Updating files:  75% (12071/16023)Updating files:  76% (12178/16023)Updating files:  77% (12338/16023)Updating files:  77% (12350/16023)Updating files:  78% (12498/16023)Updating files:  78% (12630/16023)Updating files:  79% (12659/16023)Updating files:  80% (12819/16023)Updating files:  80% (12913/16023)Updating files:  81% (12979/16023)Updating files:  82% (13139/16023)Updating files:  82% (13204/16023)Updating files:  83% (13300/16023)Updating files:  84% (13460/16023)Updating files:  84% (13507/16023)Updating files:  85% (13620/16023)Updating files:  86% (13780/16023)Updating files:  86% (13834/16023)Updating files:  87% (13941/16023)Updating files:  88% (14101/16023)Updating files:  88% (14176/16023)Updating files:  89% (14261/16023)Updating files:  90% (14421/16023)Updating files:  90% (14514/16023)Updating files:  91% (14581/16023)Updating files:  92% (14742/16023)Updating files:  92% (14834/16023)Updating files:  93% (14902/16023)Updating files:  94% (15062/16023)Updating files:  94% (15153/16023)Updating files:  95% (15222/16023)Updating files:  96% (15383/16023)Updating files:  96% (15471/16023)Updating files:  97% (15543/16023)Updating files:  98% (15703/16023)Updating files:  98% (15779/16023)Updating files:  99% (15863/16023)Updating files: 100% (16023/16023)Updating files: 100% (16023/16023), done.
+Submodule 'android/libs/fbjni' (https://github.com/facebookincubator/fbjni.git) registered for path 'android/libs/fbjni'
+Submodule 'third_party/NNPACK_deps/FP16' (https://github.com/Maratyszcza/FP16.git) registered for path 'third_party/FP16'
+Submodule 'third_party/NNPACK_deps/FXdiv' (https://github.com/Maratyszcza/FXdiv.git) registered for path 'third_party/FXdiv'
+Submodule 'third_party/NNPACK' (https://github.com/Maratyszcza/NNPACK.git) registered for path 'third_party/NNPACK'
+Submodule 'third_party/NVTX' (https://github.com/NVIDIA/NVTX.git) registered for path 'third_party/NVTX'
+Submodule 'third_party/VulkanMemoryAllocator' (https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator.git) registered for path 'third_party/VulkanMemoryAllocator'
+Submodule 'third_party/XNNPACK' (https://github.com/google/XNNPACK.git) registered for path 'third_party/XNNPACK'
+Submodule 'third_party/benchmark' (https://github.com/google/benchmark.git) registered for path 'third_party/benchmark'
+Submodule 'third_party/cpp-httplib' (https://github.com/yhirose/cpp-httplib.git) registered for path 'third_party/cpp-httplib'
+Submodule 'third_party/cpuinfo' (https://github.com/pytorch/cpuinfo.git) registered for path 'third_party/cpuinfo'
+Submodule 'third_party/cudnn_frontend' (https://github.com/NVIDIA/cudnn-frontend.git) registered for path 'third_party/cudnn_frontend'
+Submodule 'third_party/cutlass' (https://github.com/NVIDIA/cutlass.git) registered for path 'third_party/cutlass'
+Submodule 'third_party/eigen' (https://gitlab.com/libeigen/eigen.git) registered for path 'third_party/eigen'
+Submodule 'third_party/fbgemm' (https://github.com/pytorch/fbgemm) registered for path 'third_party/fbgemm'
+Submodule 'third_party/flatbuffers' (https://github.com/google/flatbuffers.git) registered for path 'third_party/flatbuffers'
+Submodule 'third_party/fmt' (https://github.com/fmtlib/fmt.git) registered for path 'third_party/fmt'
+Submodule 'third_party/gemmlowp/gemmlowp' (https://github.com/google/gemmlowp.git) registered for path 'third_party/gemmlowp/gemmlowp'
+Submodule 'third_party/gloo' (https://github.com/facebookincubator/gloo) registered for path 'third_party/gloo'
+Submodule 'third_party/googletest' (https://github.com/google/googletest.git) registered for path 'third_party/googletest'
+Submodule 'third_party/ideep' (https://github.com/intel/ideep) registered for path 'third_party/ideep'
+Submodule 'third_party/ittapi' (https://github.com/intel/ittapi.git) registered for path 'third_party/ittapi'
+Submodule 'third_party/kineto' (https://github.com/pytorch/kineto) registered for path 'third_party/kineto'
+Submodule 'third_party/mimalloc' (https://github.com/microsoft/mimalloc.git) registered for path 'third_party/mimalloc'
+Submodule 'third_party/nccl/nccl' (https://github.com/NVIDIA/nccl) registered for path 'third_party/nccl/nccl'
+Submodule 'third_party/nlohmann' (https://github.com/nlohmann/json.git) registered for path 'third_party/nlohmann'
+Submodule 'third_party/onnx' (https://github.com/onnx/onnx.git) registered for path 'third_party/onnx'
+Submodule 'third_party/opentelemetry-cpp' (https://github.com/open-telemetry/opentelemetry-cpp.git) registered for path 'third_party/opentelemetry-cpp'
+Submodule 'third_party/pocketfft' (https://github.com/mreineck/pocketfft) registered for path 'third_party/pocketfft'
+Submodule 'third_party/protobuf' (https://github.com/protocolbuffers/protobuf.git) registered for path 'third_party/protobuf'
+Submodule 'third_party/NNPACK_deps/psimd' (https://github.com/Maratyszcza/psimd.git) registered for path 'third_party/psimd'
+Submodule 'third_party/NNPACK_deps/pthreadpool' (https://github.com/Maratyszcza/pthreadpool.git) registered for path 'third_party/pthreadpool'
+Submodule 'third_party/pybind11' (https://github.com/pybind/pybind11.git) registered for path 'third_party/pybind11'
+Submodule 'third_party/python-peachpy' (https://github.com/malfet/PeachPy.git) registered for path 'third_party/python-peachpy'
+Submodule 'third_party/sleef' (https://github.com/shibatch/sleef) registered for path 'third_party/sleef'
+Submodule 'third_party/tensorpipe' (https://github.com/pytorch/tensorpipe.git) registered for path 'third_party/tensorpipe'
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/android/libs/fbjni'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/FP16'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/FXdiv'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/NNPACK'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/NVTX'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/VulkanMemoryAllocator'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/XNNPACK'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/benchmark'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/cpp-httplib'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/cpuinfo'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/cudnn_frontend'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/cutlass'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/eigen'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/fbgemm'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/flatbuffers'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/fmt'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/gemmlowp/gemmlowp'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/gloo'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/googletest'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/ideep'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/ittapi'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/kineto'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/mimalloc'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/nccl/nccl'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/nlohmann'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/onnx'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/opentelemetry-cpp'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/pocketfft'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/protobuf'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/psimd'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/pthreadpool'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/pybind11'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/python-peachpy'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/sleef'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/tensorpipe'...
+From https://github.com/pytorch/cpuinfo
+ * branch            094fc30b9256f54dad5ad23bcbfb5de74781422f -> FETCH_HEAD
+From https://gitlab.com/libeigen/eigen
+ * branch                3147391d946bb4b6c68edd901f2add6ac1f31f8c -> FETCH_HEAD
+Submodule 'third_party/asmjit' (https://github.com/asmjit/asmjit.git) registered for path 'third_party/fbgemm/third_party/asmjit'
+Submodule 'third_party/cpuinfo' (https://github.com/pytorch/cpuinfo) registered for path 'third_party/fbgemm/third_party/cpuinfo'
+Submodule 'third_party/cutlass' (https://github.com/NVIDIA/cutlass.git) registered for path 'third_party/fbgemm/third_party/cutlass'
+Submodule 'third_party/googletest' (https://github.com/google/googletest) registered for path 'third_party/fbgemm/third_party/googletest'
+Submodule 'third_party/hipify_torch' (https://github.com/ROCmSoftwarePlatform/hipify_torch.git) registered for path 'third_party/fbgemm/third_party/hipify_torch'
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/fbgemm/third_party/asmjit'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/fbgemm/third_party/cpuinfo'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/fbgemm/third_party/cutlass'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/fbgemm/third_party/googletest'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/fbgemm/third_party/hipify_torch'...
+Submodule 'mkl-dnn' (https://github.com/intel/mkl-dnn.git) registered for path 'third_party/ideep/mkl-dnn'
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/ideep/mkl-dnn'...
+From https://github.com/intel/mkl-dnn
+ * branch                66f0cb9eb66affd2da3bf5f8d897376f04aae6af -> FETCH_HEAD
+Submodule 'libkineto/third_party/dynolog' (https://github.com/facebookincubator/dynolog.git) registered for path 'third_party/kineto/libkineto/third_party/dynolog'
+Submodule 'libkineto/third_party/fmt' (https://github.com/fmtlib/fmt.git) registered for path 'third_party/kineto/libkineto/third_party/fmt'
+Submodule 'libkineto/third_party/googletest' (https://github.com/google/googletest.git) registered for path 'third_party/kineto/libkineto/third_party/googletest'
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/kineto/libkineto/third_party/dynolog'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/kineto/libkineto/third_party/fmt'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/kineto/libkineto/third_party/googletest'...
+Submodule 'third_party/DCGM' (https://github.com/NVIDIA/DCGM.git) registered for path 'third_party/kineto/libkineto/third_party/dynolog/third_party/DCGM'
+Submodule 'third_party/cpr' (https://github.com/libcpr/cpr.git) registered for path 'third_party/kineto/libkineto/third_party/dynolog/third_party/cpr'
+Submodule 'third_party/fmt' (https://github.com/fmtlib/fmt.git) registered for path 'third_party/kineto/libkineto/third_party/dynolog/third_party/fmt'
+Submodule 'third_party/gflags' (https://github.com/gflags/gflags.git) registered for path 'third_party/kineto/libkineto/third_party/dynolog/third_party/gflags'
+Submodule 'third_party/glog' (https://github.com/google/glog.git) registered for path 'third_party/kineto/libkineto/third_party/dynolog/third_party/glog'
+Submodule 'third_party/googletest' (https://github.com/google/googletest.git) registered for path 'third_party/kineto/libkineto/third_party/dynolog/third_party/googletest'
+Submodule 'third_party/json' (https://github.com/nlohmann/json.git) registered for path 'third_party/kineto/libkineto/third_party/dynolog/third_party/json'
+Submodule 'third_party/pfs' (https://github.com/dtrugman/pfs.git) registered for path 'third_party/kineto/libkineto/third_party/dynolog/third_party/pfs'
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/kineto/libkineto/third_party/dynolog/third_party/DCGM'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/kineto/libkineto/third_party/dynolog/third_party/cpr'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/kineto/libkineto/third_party/dynolog/third_party/fmt'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/kineto/libkineto/third_party/dynolog/third_party/gflags'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/kineto/libkineto/third_party/dynolog/third_party/glog'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/kineto/libkineto/third_party/dynolog/third_party/googletest'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/kineto/libkineto/third_party/dynolog/third_party/json'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/kineto/libkineto/third_party/dynolog/third_party/pfs'...
+Submodule 'doc' (https://github.com/gflags/gflags.git) registered for path 'third_party/kineto/libkineto/third_party/dynolog/third_party/gflags/doc'
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/kineto/libkineto/third_party/dynolog/third_party/gflags/doc'...
+From https://github.com/google/googletest
+ * branch              58d77fa8070e8cec2dc1ed015d66b454c8d78850 -> FETCH_HEAD
+From https://github.com/onnx/onnx
+ * branch              3bf92c03a9f27eba3bda1e5b9e63ea20ec213557 -> FETCH_HEAD
+Submodule 'third_party/benchmark' (https://github.com/google/benchmark.git) registered for path 'third_party/onnx/third_party/benchmark'
+Submodule 'third_party/pybind11' (https://github.com/pybind/pybind11.git) registered for path 'third_party/onnx/third_party/pybind11'
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/onnx/third_party/benchmark'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/onnx/third_party/pybind11'...
+From https://github.com/pybind/pybind11
+ * branch              5b0a6fc2017fcc176545afe3e09c9f9885283242 -> FETCH_HEAD
+Submodule 'third_party/benchmark' (https://github.com/google/benchmark) registered for path 'third_party/opentelemetry-cpp/third_party/benchmark'
+Submodule 'third_party/googletest' (https://github.com/google/googletest) registered for path 'third_party/opentelemetry-cpp/third_party/googletest'
+Submodule 'third_party/ms-gsl' (https://github.com/microsoft/GSL) registered for path 'third_party/opentelemetry-cpp/third_party/ms-gsl'
+Submodule 'third_party/nlohmann-json' (https://github.com/nlohmann/json) registered for path 'third_party/opentelemetry-cpp/third_party/nlohmann-json'
+Submodule 'third_party/opentelemetry-proto' (https://github.com/open-telemetry/opentelemetry-proto) registered for path 'third_party/opentelemetry-cpp/third_party/opentelemetry-proto'
+Submodule 'third_party/opentracing-cpp' (https://github.com/opentracing/opentracing-cpp.git) registered for path 'third_party/opentelemetry-cpp/third_party/opentracing-cpp'
+Submodule 'third_party/prometheus-cpp' (https://github.com/jupp0r/prometheus-cpp) registered for path 'third_party/opentelemetry-cpp/third_party/prometheus-cpp'
+Submodule 'tools/vcpkg' (https://github.com/Microsoft/vcpkg) registered for path 'third_party/opentelemetry-cpp/tools/vcpkg'
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/opentelemetry-cpp/third_party/benchmark'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/opentelemetry-cpp/third_party/googletest'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/opentelemetry-cpp/third_party/ms-gsl'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/opentelemetry-cpp/third_party/nlohmann-json'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/opentelemetry-cpp/third_party/opentelemetry-proto'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/opentelemetry-cpp/third_party/opentracing-cpp'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/opentelemetry-cpp/third_party/prometheus-cpp'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/opentelemetry-cpp/tools/vcpkg'...
+Submodule 'civetweb' (https://github.com/civetweb/civetweb.git) registered for path 'third_party/opentelemetry-cpp/third_party/prometheus-cpp/3rdparty/civetweb'
+Submodule 'googletest' (https://github.com/google/googletest.git) registered for path 'third_party/opentelemetry-cpp/third_party/prometheus-cpp/3rdparty/googletest'
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/opentelemetry-cpp/third_party/prometheus-cpp/3rdparty/civetweb'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/opentelemetry-cpp/third_party/prometheus-cpp/3rdparty/googletest'...
+Submodule 'third_party/benchmark' (https://github.com/google/benchmark.git) registered for path 'third_party/protobuf/third_party/benchmark'
+Submodule 'third_party/googletest' (https://github.com/google/googletest.git) registered for path 'third_party/protobuf/third_party/googletest'
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/protobuf/third_party/benchmark'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/protobuf/third_party/googletest'...
+From https://github.com/pybind/pybind11
+ * branch              7c33cdc2d39c7b99a122579f53bc94c8eb3332ff -> FETCH_HEAD
+From https://github.com/malfet/PeachPy
+ * branch            f45429b087dd7d5bc78bb40dc7cf06425c252d67 -> FETCH_HEAD
+Submodule 'third_party/googletest' (https://github.com/google/googletest.git) registered for path 'third_party/tensorpipe/third_party/googletest'
+Submodule 'third_party/libnop' (https://github.com/google/libnop.git) registered for path 'third_party/tensorpipe/third_party/libnop'
+Submodule 'third_party/libuv' (https://github.com/libuv/libuv.git) registered for path 'third_party/tensorpipe/third_party/libuv'
+Submodule 'third_party/pybind11' (https://github.com/pybind/pybind11.git) registered for path 'third_party/tensorpipe/third_party/pybind11'
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/tensorpipe/third_party/googletest'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/tensorpipe/third_party/libnop'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/tensorpipe/third_party/libuv'...
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/tensorpipe/third_party/pybind11'...
+From https://github.com/pybind/pybind11
+ * branch              a23996fce38ff6ccfbcdc09f1e63f2c4be5ea2ef -> FETCH_HEAD
+Submodule 'tools/clang' (https://github.com/wjakob/clang-cindex-python3) registered for path 'third_party/tensorpipe/third_party/pybind11/tools/clang'
+Cloning into '/home/iansari/pytorch_sm100_build/pytorch/third_party/tensorpipe/third_party/pybind11/tools/clang'...
+From https://github.com/wjakob/clang-cindex-python3
+ * branch            6a00cbc4a9b8e68b71caf7f774b3f9c753ae84d5 -> FETCH_HEAD
+/blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/lib/python3.11/site-packages/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
+  warn(
+/blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/lib/python3.11/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: BSD License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+/blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/lib/python3.11/site-packages/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
+  warn(
+CMake Warning at cmake/public/cuda.cmake:140 (message):
+  Failed to compute shorthash for libnvrtc.so
+Call Stack (most recent call first):
+  cmake/Dependencies.cmake:44 (include)
+  CMakeLists.txt:863 (include)
+
+
+CMake Warning at cmake/public/cuda.cmake:214 (message):
+  Cannot find cuDNN library.  Turning the option off
+Call Stack (most recent call first):
+  cmake/Dependencies.cmake:44 (include)
+  CMakeLists.txt:863 (include)
+
+
+CMake Warning at cmake/public/cuda.cmake:239 (message):
+  Cannot find cuSPARSELt library.  Turning the option off
+Call Stack (most recent call first):
+  cmake/Dependencies.cmake:44 (include)
+  CMakeLists.txt:863 (include)
+
+
+CMake Warning at cmake/public/cuda.cmake:255 (message):
+  Cannot find CUDSS library.  Turning the option off
+Call Stack (most recent call first):
+  cmake/Dependencies.cmake:44 (include)
+  CMakeLists.txt:863 (include)
+
+
+CMake Error at cmake/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:227 (message):
+  Unknown CUDA Architecture Name 10.0 in CUDA_SELECT_NVCC_ARCH_FLAGS
+Call Stack (most recent call first):
+  cmake/public/utils.cmake:333 (cuda_select_nvcc_arch_flags)
+  cmake/public/cuda.cmake:327 (torch_cuda_get_nvcc_gencode_flag)
+  cmake/Dependencies.cmake:44 (include)
+  CMakeLists.txt:863 (include)
+
+
+CMake Error at cmake/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:231 (message):
+  arch_bin wasn't set for some reason
+Call Stack (most recent call first):
+  cmake/public/utils.cmake:333 (cuda_select_nvcc_arch_flags)
+  cmake/public/cuda.cmake:327 (torch_cuda_get_nvcc_gencode_flag)
+  cmake/Dependencies.cmake:44 (include)
+  CMakeLists.txt:863 (include)
+
+
+CMake Warning at cmake/Dependencies.cmake:95 (message):
+  Not compiling with XPU.  Could NOT find SYCL.Suppress this warning with
+  -DUSE_XPU=OFF.
+Call Stack (most recent call first):
+  CMakeLists.txt:863 (include)
+
+
+CMake Warning (dev) at /blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake:493 (message):
+  The package name passed to find_package_handle_standard_args() (OpenMP_C)
+  does not match the name of the calling package (OpenMP).  This can lead to
+  problems in calling code that expects find_package() result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/Modules/FindOpenMP.cmake:590 (find_package_handle_standard_args)
+  cmake/Modules/FindMKL.cmake:252 (FIND_PACKAGE)
+  cmake/Modules/FindMKL.cmake:354 (CHECK_ALL_LIBRARIES)
+  cmake/Modules/FindOpenMP.cmake:246 (find_package)
+  cmake/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)
+  cmake/Modules/FindMKL.cmake:252 (FIND_PACKAGE)
+  cmake/Modules/FindMKL.cmake:354 (CHECK_ALL_LIBRARIES)
+  cmake/Dependencies.cmake:193 (find_package)
+  CMakeLists.txt:863 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake:493 (message):
+  The package name passed to find_package_handle_standard_args() (OpenMP_CXX)
+  does not match the name of the calling package (OpenMP).  This can lead to
+  problems in calling code that expects find_package() result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/Modules/FindOpenMP.cmake:590 (find_package_handle_standard_args)
+  cmake/Modules/FindMKL.cmake:252 (FIND_PACKAGE)
+  cmake/Modules/FindMKL.cmake:354 (CHECK_ALL_LIBRARIES)
+  cmake/Modules/FindOpenMP.cmake:246 (find_package)
+  cmake/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)
+  cmake/Modules/FindMKL.cmake:252 (FIND_PACKAGE)
+  cmake/Modules/FindMKL.cmake:354 (CHECK_ALL_LIBRARIES)
+  cmake/Dependencies.cmake:193 (find_package)
+  CMakeLists.txt:863 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake:493 (message):
+  The package name passed to find_package_handle_standard_args() (OpenMP_C)
+  does not match the name of the calling package (OpenMP).  This can lead to
+  problems in calling code that expects find_package() result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/Modules/FindOpenMP.cmake:590 (find_package_handle_standard_args)
+  cmake/Modules/FindMKL.cmake:252 (FIND_PACKAGE)
+  cmake/Modules/FindMKL.cmake:354 (CHECK_ALL_LIBRARIES)
+  cmake/Dependencies.cmake:193 (find_package)
+  CMakeLists.txt:863 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /blue/pinaki.sarder/iansari/conda/envs/pytorch_build_sm100/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake:493 (message):
+  The package name passed to find_package_handle_standard_args() (OpenMP_CXX)
+  does not match the name of the calling package (OpenMP).  This can lead to
+  problems in calling code that expects find_package() result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/Modules/FindOpenMP.cmake:590 (find_package_handle_standard_args)
+  cmake/Modules/FindMKL.cmake:252 (FIND_PACKAGE)
+  cmake/Modules/FindMKL.cmake:354 (CHECK_ALL_LIBRARIES)
+  cmake/Dependencies.cmake:193 (find_package)
+  CMakeLists.txt:863 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Deprecation Warning at third_party/pthreadpool/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Deprecation Warning at third_party/FXdiv/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Deprecation Warning at third_party/cpuinfo/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Deprecation Warning at aten/src/ATen/native/quantized/cpu/qnnpack/CMakeLists.txt:7 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Error at third_party/psimd/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 3.5 has been removed from CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+  Or, add -DCMAKE_POLICY_VERSION_MINIMUM=3.5 to try configuring anyway.
+
+

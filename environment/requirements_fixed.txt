@@ -1,0 +1,64 @@
+# Motion Control - Fixed Requirements for PyTorch 2.8+
+# Install with: pip install -r requirements_fixed.txt
+
+# Core ML frameworks (assuming already installed from conda or system)
+# torch>=2.0.0
+# torchaudio>=2.0.0
+
+# Install torchvision compatible with PyTorch 2.8
+torchvision>=0.19.0
+
+# Diffusion models and transformers
+transformers>=4.38.0
+diffusers>=0.28.0
+accelerate>=0.27.0
+safetensors>=0.4.0
+peft>=0.8.0
+
+# Video/Image processing
+opencv-python>=4.8.0
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.9
+av>=11.0.0
+pillow>=9.0.0
+scikit-image>=0.21.0
+
+# Deep learning utilities
+einops>=0.7.0
+timm>=0.9.0
+
+# Configuration
+omegaconf>=2.3.0
+pyyaml>=6.0
+
+# Video restoration - Install BasicSR from git for PyTorch 2.8 compatibility
+# basicsr>=1.4.2
+git+https://github.com/XPixelGroup/BasicSR.git@master
+
+# Face restoration dependencies
+facexlib>=0.3.0
+gfpgan>=1.3.8
+
+# Real-ESRGAN - may need manual install
+# realesrgan>=0.3.0
+
+# Face detection (optional, for identity preservation)
+# insightface>=0.7.3
+# onnxruntime>=1.16.0
+
+# Progress and logging
+tqdm>=4.66.0
+tensorboard>=2.15.0
+
+# Utilities
+requests>=2.31.0
+huggingface-hub>=0.20.0
+scipy>=1.11.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+
+# Additional utilities
+addict
+lmdb
+yapf
+tb-nightly
